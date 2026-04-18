@@ -18,7 +18,7 @@ CREATE TABLE DIM_Geografica (
 
 -- Dimensión Paciente (Jerárquica 3)
 CREATE TABLE DIM_Paciente (
-    ID_Paciente INT PRIMARY KEY,
+    ID_Paciente BIGINT PRIMARY KEY,
     Rango_Etario VARCHAR(20),
     Edad INT,
     Gender VARCHAR(1),
