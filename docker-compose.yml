@@ -1,0 +1,15 @@
+services:
+  postgres-dwh:
+    image: postgres:15
+    container_name: hexa-dwh-db
+    environment:
+      POSTGRES_USER: hexa_admin
+      POSTGRES_PASSWORD: hexa
+      POSTGRES_DB: hexa_dwh
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
